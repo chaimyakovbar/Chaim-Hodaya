@@ -1,9 +1,13 @@
 import React from 'react';
-import './SecPage.css'; // נוסיף את קובץ ה-CSS
+import './SecPage.css'; // קובץ ה-CSS שלך
 
 const SecPage = () => {
     return (
         <div className="container">
+            <audio autoPlay loop>
+                <source src={require('./audio.mp3')} type="audio/mpeg" />
+            </audio>
+
             <div className="invitation">
                 <div className="section">
                     <p className="animated-text">בעזהשית</p>

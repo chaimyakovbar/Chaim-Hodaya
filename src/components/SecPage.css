@@ -26,7 +26,7 @@
     font-size: 16px;
     color: #555;
     opacity: 0;
-    animation: fadeIn 2s ease-in forwards;
+    animation: fadeIn 5s ease-in forwards;
 }
 
 .names {
@@ -35,7 +35,7 @@
     font-weight: bold;
     color: #333;
     opacity: 0;
-    animation: fadeIn 2s ease-in forwards;
+    animation: fadeIn 8s ease-in forwards;
 }
 
 @keyframes fadeIn {

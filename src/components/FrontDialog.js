@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // חשוב לייבא את Link מ-react-router-dom
+import { Link } from 'react-router-dom'
 
 const FrontDialog = () => {
     return (
@@ -14,7 +14,7 @@ const FrontDialog = () => {
             <p>Hodaya & Chaim</p>
             <p>16.02.2025</p>
             <Link
-                to="/SecPage"  // זה יוביל לדף השני
+                to="/SecPage" 
                 style={{
                     textDecoration: "none",
                     color: "inherit",
