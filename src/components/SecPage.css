@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/assets/OrliLandau-5059.JPG') no-repeat center center/cover;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.invitation {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* רקע לבן עם שקיפות */
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.animated-text {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+.names {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
