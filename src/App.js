@@ -6,12 +6,12 @@ import SecPage from "./components/SecPage";
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<FrontDialog />} />
-        <Route path="/SecPage" element={<SecPage />} />
-      </Routes>
-    </Router>
+      <Router>
+        <Routes>
+          <Route path="/" element={<FrontDialog />} />
+          <Route path="/SecPage" element={<SecPage />} />
+        </Routes>
+      </Router>
   );
 };
 

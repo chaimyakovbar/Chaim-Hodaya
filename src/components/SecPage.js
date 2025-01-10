@@ -1,5 +1,6 @@
 import React from 'react';
-import './SecPage.css'; // קובץ ה-CSS שלך
+import './SecPage.css';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const SecPage = () => {
     return (
@@ -19,7 +20,7 @@ const SecPage = () => {
                     <p className="animated-text">קבלת פנים 18:00/18:30</p>
                     <p className="animated-text">חופה 19:00/19:30</p>
                 </div>
-                <div style={{display: 'flex', justifyContent: 'space-around'}}>
+                <div style={{ display: 'flex', justifyContent: 'space-around' }}>
                     <div className="section">
                         <p className="animated-text">משפחת החתן</p>
                         <p className="animated-text">חיה הלפרין</p>
@@ -34,6 +35,13 @@ const SecPage = () => {
                     </div>
                 </div>
             </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '16px'}}>
+                    <LocationOnIcon />
+                    <a href='https://waze.com/ul?a=share_drive&locale=iw&sd=-sV8XO84lU96tavmnQ-sd&env=il&utm_source=waze_app&utm_campaign=share_drive'
+                     style={{  textDecoration: 'none',  color: 'inherit'}}>
+                        Bne Brak
+                    </a>
+                </div>
         </div>
     );
 };

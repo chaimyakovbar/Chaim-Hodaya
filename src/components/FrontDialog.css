@@ -1,0 +1,102 @@
+.dialog-container {
+    display: flex;
+    margin-top: 20%;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Georgia', serif;
+    color: #333;
+    animation: colorChange 3s infinite alternate; /* הוספתי את האנימציה על כל הדיב */
+}
+
+.dialog-text,
+.dialog-date,
+.dialog-button {
+    animation: colorChange 3s infinite alternate; /* הוספתי לכל הטקסטים */
+}
+
+.dialog-text {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.dialog-date {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.dialog-link {
+    text-decoration: none;
+    color: inherit;
+    margin-top: 20px;
+}
+
+.dialog-button {
+    position: relative;
+    padding: 15px 30px;
+    background-color: #000000;
+    border: white solid 1px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.dialog-button:hover {
+    background-color: #fffffe;
+    transform: translateY(-3px);
+}
+
+.arrow-left,
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid white;
+    position: absolute;
+    top: -15px;
+    animation: bounce 1s infinite;
+}
+
+.arrow-left {
+    left: 10%;
+    transform: translateX(-50%) rotate(180deg);
+}
+
+.arrow-right {
+    right: 10%;
+    transform: translateX(50%) rotate(0deg);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: #ffffff; /* צבע חזק (כתום) */
+    }
+    25% {
+        color: #d0d0d0; /* צבע חלש יותר (בהיר) */
+    }
+    50% {
+        color: #a4a4a4; /* צבע חלש יותר (בהיר) */
+    }
+    75% {
+        color: #818181; /* צבע חלש יותר (בהיר) */
+    }
+    100% {
+        color: #535353; /* חזרה לצבע החוזר */
+    }
+}
