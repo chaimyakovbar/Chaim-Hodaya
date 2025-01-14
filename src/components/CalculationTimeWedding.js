@@ -13,22 +13,27 @@ const CountdownTimer = () => {
     }, []);
 
     function calculateTimeLeft() {
-        const weddingDate = new Date('2025-02-16T00:00:00');
-        const now = new Date();
-        const difference = weddingDate - now;
+        const weddingDate = new Date('2025-02-16T00:00:00')
+        const now = new Date()
+        const difference = weddingDate - now
 
         let timeLeft = {};
-
+   
         if (difference > 0) {
             timeLeft = {
-                days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-                hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-                minutes: Math.floor((difference / 1000 / 60) % 60),
-                seconds: Math.floor((difference / 1000) % 60),
+                days: Math.max(Math.floor(difference / (1000 * 60 * 60 * 24)), 0),
+                hours: Math.max(Math.floor((difference / (1000 * 60 * 60)) % 24), 0),
+                minutes: Math.max(Math.floor((difference / 1000 / 60) % 60), 0),
+                seconds: Math.max(Math.floor((difference / 1000) % 60), 0),
             };
         }
 
         return timeLeft;
+    }
+
+    // פונקציה שמוודאת שהמספרים תמיד עם אפס מוביל
+    function formatTime(time) {
+        return time < 10 ? `0${time}` : time;
     }
 
     const timerComponents = [];
@@ -39,9 +44,10 @@ const CountdownTimer = () => {
         }
 
         timerComponents.push(
-            <span key={interval} className="timer-component">
-                {timeLeft[interval]} {interval}{' '}
-            </span>
+            <div key={interval} className="timer-component">
+                <span>{formatTime(timeLeft[interval])}</span>
+                <span className="label">{interval}</span>
+            </div>
         );
     });
 

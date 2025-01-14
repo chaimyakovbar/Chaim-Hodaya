@@ -1,11 +1,14 @@
 .container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
-    background: url('/assets/OrliLandau-5059.JPG') no-repeat center center/cover;
+    width: 100%; /* מוסיף רוחב של 100% */
+    /* background: url('./assets/image2.png') no-repeat center center/cover; */
     font-family: 'Times New Roman', Times, serif;
 }
+
 
 .invitation {
     text-align: center;
@@ -15,13 +18,16 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     width: 100%;
+    color: white;
 }
 
 .section {
     margin-bottom: 20px;
+    color: white;
 }
 
 .animated-text {
+    color: white;
     margin: 10px 0;
     font-size: 16px;
     color: #555;
@@ -30,6 +36,7 @@
 }
 
 .names {
+    color: white;
     margin: 10px 0;
     font-size: 24px;
     font-weight: bold;
