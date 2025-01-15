@@ -1,0 +1,19 @@
+.waze-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 64px;
+    height: 15px;
+    border-radius: 8px;
+    background-color: rgb(241 241 241);
+    position: absolute;
+    left: 163px;
+    top: 390px;
+    border: 1px solid black;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
+}
