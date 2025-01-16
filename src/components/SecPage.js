@@ -4,18 +4,19 @@ import './SecPage.css';
 import Video from './Video';
 import CalculationTimeWedding from './CalculationTimeWedding'
 import Waze from './Waze';
+import Sentence from './Sentence';
 // import ThirdPage from './ThirdPage';
 // import FuordPage from './FuordPage';
 
 const SecPage = () => {
     return (
         <div>
-            
-            <CalculationTimeWedding />
+            <Sentence />
             <Video />
             <Waze />
-            {/* <ThirdPage />
-            <FuordPage /> */}
+            <CalculationTimeWedding />
+            {/* <ThirdPage /> */}
+            {/* <FuordPage /> */}
         </div >
     );
 };
