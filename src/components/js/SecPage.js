@@ -12,7 +12,6 @@ const SecPage = () => {
         <div style={{height: '359px', position: 'absolute', top: '-12px', left: '0px'}}>
             <Audio />
             <Sentence />
-            {/* <Video /> */}
             <Waze />
             <CalculationTimeWedding />
         </div >

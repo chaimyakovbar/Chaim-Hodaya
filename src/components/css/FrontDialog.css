@@ -1,6 +1,6 @@
 .dialog-container {
     display: flex;
-    margin-top: 60%;
+    margin-top: 35%;
     align-items: center;
     flex-direction: column;
     font-family: 'Georgia', serif;
@@ -12,6 +12,7 @@
 .dialog-date,
 .dialog-button {
     animation: colorChange 3s infinite alternate; /* הוספתי לכל הטקסטים */
+    border: none;
 }
 
 .dialog-text {
@@ -19,12 +20,6 @@
     font-weight: bold;
     margin-bottom: 10px;
 }
-
-.dialog-date {
-    font-size: 1.5rem;
-    color: #9f0000;
-}
-
 .dialog-link {
     text-decoration: none;
     color: inherit;
@@ -37,16 +32,10 @@
     background-color: #a2a2a200;
     /* border: white solid 1px; */
     border-radius: 5px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 1.2rem;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.dialog-button:hover {
-    background-color: #fffffe;
-    transform: translateY(-3px);
 }
 
 .arrow-left,
@@ -55,7 +44,7 @@
     height: 0;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    border-top: 12px solid white;
+    border-top: 12px solid rgb(0, 0, 0);
     position: absolute;
     top: -15px;
     animation: bounce 1s infinite;
