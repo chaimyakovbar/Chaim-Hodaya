@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import FrontDialog from "./components/FrontDialog";
-import SecPage from "./components/SecPage";
+import FrontDialog from "./components/js/FrontDialog";
+import SecPage from "./components/js/SecPage";
 
 const App = () => {
   return (

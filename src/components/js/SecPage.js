@@ -1,22 +1,20 @@
 import React from 'react';
 
-import './SecPage.css';
-import Video from './Video';
+import '../css/SecPage.css';
+// import Video from './Video';
 import CalculationTimeWedding from './CalculationTimeWedding'
 import Waze from './Waze';
 import Sentence from './Sentence';
-// import ThirdPage from './ThirdPage';
-// import FuordPage from './FuordPage';
+import Audio from './Audio';
 
 const SecPage = () => {
     return (
-        <div>
+        <div style={{height: '359px', position: 'absolute', top: '-12px', left: '0px'}}>
+            <Audio />
             <Sentence />
-            <Video />
+            {/* <Video /> */}
             <Waze />
             <CalculationTimeWedding />
-            {/* <ThirdPage /> */}
-            {/* <FuordPage /> */}
         </div >
     );
 };

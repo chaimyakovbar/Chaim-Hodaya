@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { faWaze } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './Waze.css';
+import '../css/Waze.css';
 
 const Waze = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -14,7 +14,7 @@ const Waze = () => {
     }, []);
 
     return (
-        <div style={{marginLeft: '39%', marginTop: 0}} className={`waze-container ${isVisible ? 'fade-in' : ''}`}>
+        <div style={{marginLeft: '39%', marginTop: 10, marginBottom: 10}} className={`waze-container ${isVisible ? 'fade-in' : ''}`}>
             <a 
                 href='https://waze.com/ul/hsv8v81sgu'
                 style={{
